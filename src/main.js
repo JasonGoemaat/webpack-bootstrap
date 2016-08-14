@@ -1,0 +1,1 @@
+document.write('main.js loaded');

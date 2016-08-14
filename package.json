@@ -1,0 +1,33 @@
+{
+  "name": "ng2-webpack-setup",
+  "version": "0.1.0",
+  "description": "From following youtube video",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --progress",
+    "build:prod": "cross-env APP_ENVIRONMENT=production webpack -p --progress",
+    "serve": "webpack-dev-server --hot --inline",
+    "serve:prod": "cross-env APP_ENVIRONMENT=production webpack-dev-server --inline -p --progress",
+    "postinstall": "echo NO POSTINSTALL"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "bootswatch": "^3.3.7",
+    "copy-webpack-plugin": "^3.0.1",
+    "cross-env": "^2.0.0",
+    "css-loader": "^0.23.1",
+    "extract-loader": "0.0.2",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.22.0",
+    "node-sass": "^3.8.0",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^4.0.0",
+    "script-loader": "^0.7.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.1.0-beta.20",
+    "webpack-dev-server": "^2.1.0-beta.0"
+  }
+}
