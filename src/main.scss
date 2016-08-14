@@ -1,4 +1,10 @@
 //@import '_variables.scss';
 
+// this works if I put a single file there, and it
+// can import using relative path from the same directory
+@import '../node_modules/test/_test.scss';
+
 $my-color: #0000c0;
-h1 { color: $my-color; }
+h1 { color: $my-color; } // local variable
+h2 { color: $alt-color; } // from ../node_modules/_test.scss
+h3 { color: $test-color; } // from ../node_modules/_variables.scss

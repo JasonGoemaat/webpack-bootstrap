@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap-sass": "^3.3.7"
   },
   "devDependencies": {
     "bootswatch": "^3.3.7",
