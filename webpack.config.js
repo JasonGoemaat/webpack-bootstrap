@@ -35,7 +35,12 @@ module.exports = {
                 from: 'node_modules/bootstrap-sass/assets/fonts/bootstrap/*',
                 to: 'assets/fonts',
                 flatten: true
-            }
+            },
+            {
+                from: 'node_modules/font-awesome/fonts/*',
+                to: 'assets/fonts',
+                flatten: true
+            },
         ]),
     ],
 

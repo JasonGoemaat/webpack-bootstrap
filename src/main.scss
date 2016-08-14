@@ -1,21 +1,48 @@
+// path for bootstrap and font-awesome fonts
 $icon-font-path: 'assets/fonts/';
 $fa-font-path: 'assets/fonts/';
 
+// bootstrap variables
+$grid-columns: 16;
+$grid-gutter-width: 10;
+
+// nice looking font for bootstrap
+$font-family-sans-serif: -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+
+// custom danger background to be darker than spacelab:
+$btn-danger-bg: darken(#CD0200, 5%); // spacelab #CD0200
+
+// bootswatch spacelab theme variables (before bootstrap)
+@import '../node_modules/bootswatch/spacelab/_variables.scss';
+
+// now bootstrap proper
+@import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap';
+
+// and overriding styles from bootswatch
+@import '../node_modules/bootswatch/spacelab/_bootswatch.scss';
+
+// now add font-awesome styles
+@import '../node_modules/font-awesome/scss/font-awesome';
+
+$my-color: #0000c0;
+h1 { color: $my-color; } // local variable
+//h2 { color: $alt-color; } // from ../node_modules/_test.scss
+//h3 { color: $test-color; } // from ../node_modules/_variables.scss
+
+/* HERE IS EARLY TESTING STUFF I DID
 
 // this works if I put a single file there, and it
 // can import using relative path from the same directory
-@import '../node_modules/test/_test.scss';
+//@import '../node_modules/test/_test.scss';
 
 // try to import bootstrap
 // $bootstrap-sass-asset-helper: true uses a function, normally
 // set in _bootstrap-compass, _bootstrap_mincer or _bootstrap-sprockets,
 // but without those it appears in the final css and won't work.
+// NOTE: the fix so it didn't 'require' all the font files was to
+// add an option to the css loader that told it not to process url():
+//     'css?-url'
 //
 // $bootstrap-sass-asset-helper: true; // uses functions that show 
 @import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
-
-
-$my-color: #0000c0;
-h1 { color: $my-color; } // local variable
-h2 { color: $alt-color; } // from ../node_modules/_test.scss
-h3 { color: $test-color; } // from ../node_modules/_variables.scss
+*/
