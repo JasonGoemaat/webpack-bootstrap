@@ -24,10 +24,15 @@ $btn-danger-bg: darken(#CD0200, 5%); // spacelab #CD0200
 // now add font-awesome styles
 @import '../node_modules/font-awesome/scss/font-awesome';
 
+/*****************************************************************************
+ * Here is my early test code, including from a fake 'test' node module some
+ * variables
+ *****************************************************************************/
 $my-color: #0000c0;
+@import '../node_modules/test/_test.scss';
 h1 { color: $my-color; } // local variable
-//h2 { color: $alt-color; } // from ../node_modules/_test.scss
-//h3 { color: $test-color; } // from ../node_modules/_variables.scss
+h2 { color: $alt-color; } // from ../node_modules/_test.scss
+h3 { color: $test-color; } // from ../node_modules/_variables.scss
 
 /* HERE IS EARLY TESTING STUFF I DID
 
