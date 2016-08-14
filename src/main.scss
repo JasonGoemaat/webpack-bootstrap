@@ -1,8 +1,19 @@
-//@import '_variables.scss';
+$icon-font-path: 'assets/fonts/';
+$fa-font-path: 'assets/fonts/';
+
 
 // this works if I put a single file there, and it
 // can import using relative path from the same directory
 @import '../node_modules/test/_test.scss';
+
+// try to import bootstrap
+// $bootstrap-sass-asset-helper: true uses a function, normally
+// set in _bootstrap-compass, _bootstrap_mincer or _bootstrap-sprockets,
+// but without those it appears in the final css and won't work.
+//
+// $bootstrap-sass-asset-helper: true; // uses functions that show 
+@import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
 
 $my-color: #0000c0;
 h1 { color: $my-color; } // local variable
